@@ -1,0 +1,30 @@
+============================================================
+ИНФОРМАЦИЯ О ПРЕДОБРАБОТКЕ ДАННЫХ
+============================================================
+
+Исходная размерность: (3000, 12)
+Размерность после обработки: (3000, 51)
+Количество признаков: 51
+
+Трансформеры в pipeline:
+- StandardScaler: нормализация числовых признаков
+- StandardScaler: нормализация engineered признаков
+- OneHotEncoder: кодирование категориальных признаков
+
+Исходные числовые признаки (2):
+  - Number of Affected Users
+  - Incident Resolution Time (in Hours)
+
+Engineered признаки (3):
+  - Attack_Efficiency
+  - Loss_per_User
+  - Risk_Score_Mean
+
+Категориальные признаки (7):
+  - Country
+  - Year
+  - Attack Type
+  - Target Industry
+  - Attack Source
+  - Security Vulnerability Type
+  - Defense Mechanism Used
